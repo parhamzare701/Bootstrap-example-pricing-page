@@ -1,0 +1,421 @@
+$color-lightgray: #3f454a;
+$color-gray: #212529;
+$color-month: #7e868d;
+$color-box-text: #f7f7f7;
+$color-borderbox: #f0f0f0;
+$font-lg: 20px;
+$font-xxlg: 60px;
+$font-xlg: 40px;
+$font-sm: 10px;
+$font-month: 30px;
+$font-md: 16px;
+$card-font-weight:450;
+$color-blue: #007bff;
+$color-darkblue: #0564ca;
+$box-shadow: 0 .25rem .75rem rgba(0, 0, 0, 0.149);
+$cards-border : 1px solid rgba(0, 0, 0, .125);
+
+@mixin cardsBtn($background-color, $color) {
+    cursor: pointer;
+    font-size: $font-md;
+    text-align: center;
+    background-color: $background-color;
+    border: 1.5913px solid $color-blue;
+    color: $color;
+    border-radius: 4px;
+    margin-top: 1rem;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-self: center;
+}
+
+@mixin cardParagraph {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin cards {
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 3rem;
+    min-width: 290px;
+    flex: 1 1 1;
+    min-height: 20rem;
+    border: $cards-border;
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+@mixin amountText {
+    font-size: $font-xlg;
+    color: $color-gray;
+}
+
+@mixin cardAmount {
+    margin-top: .7rem;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin headerTitle {
+    font-weight: $card-font-weight;
+}
+
+@mixin cardsText {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-gray;
+    max-width: 140px;
+    line-height: 25px;
+    margin-top: .7rem;
+}
+
+@mixin cardsBtnHover($background-color, $color) {
+    background-color: $background-color;
+    color: $color;
+    transition: all .3s;
+}
+
+@mixin cardsHeader {
+    background-color: $color-box-text;
+    padding: 15px;
+    font-size: $font-md;
+    display: flex;
+    justify-content: center;
+    border-bottom: $cards-border;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.header {
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 18px 25px;
+
+    &__linksbtn {
+        float: right;
+
+        .header__links {
+            color: $color-lightgray;
+            margin-right: 15px;
+            text-decoration: none;
+            font-size: $font-md;
+            line-height: 25px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .header__Singup--btn {
+            cursor: pointer;
+            padding: 8px 15px;
+            font-size: $font-md;
+            text-align: center;
+            background-color: transparent;
+            border: 1.5913px solid $color-blue;
+            color: $color-blue;
+            border-radius: 4px;
+
+            &:hover {
+                background-color: $color-blue;
+                color: white;
+                transition: all .7s;
+            }
+        }
+    }
+
+    &__company--name {
+        // margin-right: 58rem;
+        font-size: $font-lg;
+    }
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer {
+    margin-bottom: 25px;
+
+    &__box {
+        display: flex;
+        justify-content: center;
+
+        &__border {
+            margin-top: 30px;
+            // width: 63%;
+            width: 100%;
+            border-top: $cards-border;
+        }
+    }
+
+    .main-footer {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+
+        .footer-sections {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .footer--title {
+            color: $color-gray;
+            font-size: $font-lg;
+            line-height: 2;
+        }
+
+        .footer--lists {
+            line-height: 1.5;
+        }
+
+        .footer--links {
+            color: $color-month;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .main-footer__date {
+            .date__bootstrap {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            margin-top: 12px;
+
+            .date__link {
+                font-size: 13px;
+                color: $color-month;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.main-content {
+    .cards-btn {
+        padding: 10px 60px;
+    }
+
+    .sections {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__pricing__text {
+        text-align: center;
+        padding-top: 60px;
+        font-size: $font-xxlg;
+        font-weight: 200;
+        color: $color-gray;
+    }
+
+    &__lead {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &__text {
+            max-width: 700px;
+            font-size: $font-lg;
+            text-align: center;
+            color: $color-gray;
+            line-height: 35px;
+            font-weight: 100;
+        }
+    }
+
+    &__free {
+
+        .free--card--btn {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+
+            &__text {
+                @include cardsBtn(transparent, $color-blue);
+
+                &:hover {
+                    @include cardsBtnHover($color-blue, white);
+                }
+            }
+        }
+    }
+
+    &__pro {
+
+        .pro--card--btn {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+
+            &__text {
+                @include cardsBtn($color-blue, white);
+
+                &:hover {
+                    @include cardsBtnHover($color-darkblue, white);
+                }
+            }
+        }
+    }
+
+    &__enterprise {
+
+        .enterprise--card--btn {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+
+            &__text {
+                @include cardsBtn($color-blue, white);
+
+                &:hover {
+                    @include cardsBtnHover($color-darkblue, white);
+                }
+            }
+        }
+    }
+
+    .amount--lighttext {
+        color: $color-month;
+        font-size: $font-month;
+    }
+
+    .card--paragraph {
+        @include cardParagraph();
+    }
+
+    .amount--text {
+        @include amountText();
+    }
+
+    .card--paragraph__text {
+        @include cardsText();
+    }
+
+    .card--header {
+        @include cardsHeader();
+    }
+
+    .card--header__title {
+        @include headerTitle();
+    }
+
+    .card--amount {
+        @include cardAmount();
+    }
+
+    .main-cards {
+        @include cards();
+    }
+}
+
+@media (max-width: 700px) {
+    .header__company--name {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__linksbtn {
+        float: none;
+        display: flex;
+        justify-content: space-around;
+
+        .header__links {
+            line-height: 2;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .footer-sections {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-footer__lists,
+    .main-footer__date {
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    .main-footer__date__logo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 455px) {
+    .header__linksbtn {
+        flex-direction: column;
+        text-align: center;
+
+        .header__links {
+            line-height: 2;
+        }
+
+        .header__Singup--btn {
+            margin-top: 5px;
+        }
+    }
+
+    .header__company--name {
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 300px) {
+    .main-content .cards-btn {
+        padding: 10px 0;
+    }
+}
+@media (max-width: 1100px) {
+    .footer__box__border {
+        width: 100%;
+    }
+
+    .sections {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+
+        .main-cards {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .cards-btn {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

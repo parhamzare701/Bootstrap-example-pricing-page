@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing example for Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        Notification.requestPermission()
+            .then(function showNotification() {
+                var myNotif = new Notification(
+                    "this is my app", {
+                        body: "ایا ناراحت هستی ایا حالت بد هست بدو بلا!!!",
+                        icon: "test.png"
+                    }
+                );
+            })
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__company--name">Company name</a>
+        <span class="header__linksbtn">
+            <a href="#" class="header__links">Features</a>
+            <a href="#" class="header__links">Enterprise</a>
+            <a href="#" class="header__links">Support</a>
+            <a href="#" class="header__links">Pricing</a>
+            <button class="header__Singup--btn">Sing up</button>
+        </span>
+    </header>
+    <main class="main-content">
+        <h1 class="main-content__pricing__text">Pricing</h1>
+        <div class="main-content__lead">
+            <p class="main-content__lead__text">Quickly build an effective pricing table for your potential customers
+                with
+                this Bootstrap example. It's built with default Bootstrap components and utilities with little
+                customization.</p>
+        </div>
+
+        <div class="container">
+            <div class="sections">
+                <section class="main-content__free main-cards">
+                    <div class="card--header">
+                        <h3 class="card--header__title">Free</h3>
+                    </div>
+                    <div class="main-content__free--card cards">
+                        <div class="card--amount"><span class="amount--text">$0
+                                <span class="amount--lighttext">/ mo</span></span>
+                        </div>
+                        <div class="card--paragraph">
+                            <p class="card--paragraph__text">
+                                10 users included
+                                2 GB of storage
+                                Email support Help center access
+                            </p>
+                        </div>
+                        <div class="free--card--btn">
+                            <button class="free--card--btn__text cards-btn">Sing up for free</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-content__pro main-cards">
+                    <div class="card--header">
+                        <h3 class="card--header__title">Pro</h3>
+                    </div>
+                    <div class="main-content__pro--card cards">
+                        <div class="card--amount"><span class="amount--text">$15
+                                <span class="amount--lighttext">/ mo</span></span>
+                        </div>
+                        <div class="card--paragraph">
+                            <p class="card--paragraph__text">
+                                20 users included
+                                10 GB of storage
+                                Priority email support
+                                Help center access
+
+                            </p>
+                        </div>
+                        <div class="pro--card--btn">
+                            <button class="pro--card--btn__text cards-btn">Get started</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-content__enterprise main-cards">
+                    <div class="card--header">
+                        <h3 class="card--header__title">Enterprise</h3>
+                    </div>
+                    <div class="main-content__enterprise--card cards">
+                        <div class="card--amount">
+                            <span class="amount--text">$29
+                                <span class="amount--lighttext">/ mo</span></span></span>
+                        </div>
+                        <div class="card--paragraph">
+                            <p class="card--paragraph__text">
+                                30 users included
+                                15 GB of storage phone and Email support Help center access
+                            </p>
+                        </div>
+                        <div class="enterprise--card--btn">
+                            <button class="enterprise--card--btn__text cards-btn">Contact us</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class="footer">
+                <div class="footer__box">
+                    <div class="footer__box__border"></div>
+                </div>
+                <div class="main-footer">
+                    <div class="footer-sections">
+                        <div class="main-footer__date">
+                            <div class="main-footer__date__logo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="date__bootstrap" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" />
+                                    <path
+                                        d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z" />
+                                </svg>
+                            </div>
+                            <a href="" class="date__link">© 2017-2018</a>
+                        </div>
+                        <div class="main-footer__lists">
+                            <span class="footer--title">Features</span>
+                            <ul>
+                                <li class="footer--lists"><a href="" class="footer--links">Cool stuff</a></li>
+                                <li class="footer--lists"><a href="" class="footer--links">Random feature</a></li>
+                                <li class="footer--lists"><a href="" class="footer--links">Team feature</a></li>
+                                <li class="footer--lists"><a href="" class="footer--links">Stuff for developers</a></li>
+                                <li class="footer--lists"><a href="" class="footer--links">Another one</a></li>
+                                <li class="footer--lists"><a href="" class="footer--links">Last time</a></li>
+                            </ul>
+                        </div>
+                        <div class="main-footer__lists">
+                            <span class="footer--title">Resources</span>
+                            <ul>
+                                <li class="footer--lists"><a href="" class="footer--links">Resource</a></li>
+                                <li class="footer--lists"><a href="" class="footer--links">Resource name</a></li>
+                                <li class="footer--lists"><a href="" class="footer--links">Resource resource</a></li>
+                                <li class="footer--lists"><a href="" class="footer--links">Final resource</a></li>
+                            </ul>
+                        </div>
+                        <div class="main-footer__lists">
+                            <span class="footer--title">About</span>
+                            <ul>
+                                <li class="footer--lists"><a href="" class="footer--links">Team</a></li>
+                                <li class="footer--lists"><a href="" class="footer--links">Locations</a></li>
+                                <li class="footer--lists"><a href="" class="footer--links">Privacy</a></li>
+                                <li class="footer--lists"><a href="" class="footer--links">Terms</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+</body>
+
+</html>
